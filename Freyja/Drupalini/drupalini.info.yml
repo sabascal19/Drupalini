@@ -1,0 +1,24 @@
+# Data
+name: Drupalini
+type: theme
+description: Homebrewed Drupal 8 theme made with passion and care. <strong><3</strong> <br> If you wanna find out more about us, visit <a href="https://youtu.be/dQw4w9WgXcQ" target="_blank">our page</a>!
+package: Freyja
+
+version: "0.0.01"
+core: 8.x
+features:
+  - logo
+  - favicon
+
+# Branding
+screenshot: media/images/branding/screenshot.jpg
+
+# Librerias globales
+libraries: 
+  - drupalini/library-global
+
+# Regiones
+regions:
+  header: Cabecera
+  content: 'Contenido Principal'
+  footer: 'Pie de Página'

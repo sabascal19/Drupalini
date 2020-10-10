@@ -1,0 +1,27 @@
+
+<div class="layout-container">
+
+    <header role="banner">
+        
+        {% if page.My_region %}
+            {{ page.My_region }}
+        {% else %}
+            <span>esto es una puta mierda</span>
+        {% endif %}
+
+    </header>
+
+    <main role="main">
+        <a id="main-content" tabindex="-1"></a>{# link is in html.html.twig #}
+
+        <div class="layout-content">
+            {{ page.content }}
+        </div>
+
+    </main>
+
+    <footer role="contentinfo">
+        {{ page.footer }}
+    </footer>
+
+</div>

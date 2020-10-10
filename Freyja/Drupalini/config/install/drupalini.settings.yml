@@ -1,0 +1,6 @@
+logo:
+  path: '/themes/Freyja/Drupalini/media/images/branding/logo.png'
+  use_default: false
+favicon:
+  path: '/themes/Freyja/Drupalini/media/images/branding/favicon.ico'
+  use_default: false

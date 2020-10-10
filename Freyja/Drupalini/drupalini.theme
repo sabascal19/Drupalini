@@ -1,0 +1,26 @@
+<?php
+
+use Drupal\block\Entity\Block;
+
+function drupalini_preprocess_page() {
+
+    $ids = \Drupal::entityQuery('block')->execute();
+
+    echo "<ol>";
+
+    foreach($ids as $id){
+        echo "<li>";
+        echo $id;
+        echo "</li>";
+    };
+
+    echo "</ol>";
+
+    $block = \Drupal\block\Entity\Block::load('marcadelsitio');
+    $variables['My_region'] = \Drupal::entityManager()
+            ->getViewBuilder('block')
+            ->view($block);
+
+    echo "me cago en la hostia esto no funciona";
+
+}

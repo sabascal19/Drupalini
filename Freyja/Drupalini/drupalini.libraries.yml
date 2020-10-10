@@ -1,0 +1,6 @@
+library-global:
+  css:
+    theme:
+      media/css/global.css: {}
+  js:
+    media/js/global.css: {}
